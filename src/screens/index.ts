@@ -17,13 +17,13 @@
  */
 
 import { AppNavigationRegister } from '../types/template'
-// import Login from './Login'
+import App from './App'
 
 const screens: AppNavigationRegister = {
-    // Login: {
-    //     name: 'screens.Login',
-    //     component: Login
-    // }
+    App: {
+        name: 'screens.App',
+        component: App
+    }
 }
 
 export default screens

@@ -28,7 +28,7 @@ class Preferences {
 }
 
 
-export const { init } = Preferences
+export const initPreferences = Preferences.init
 
 const preferences = Preferences.getInstance
 export default preferences
