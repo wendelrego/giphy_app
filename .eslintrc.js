@@ -21,17 +21,10 @@ module.exports = {
             'error', 4, { SwitchCase: 1 }
         ],
         'react/jsx-closing-bracket-location': [
-            1,
-            {
-                selfClosing: 'after-props',
-                nonEmpty: 'after-props'
-            }
+            1, { selfClosing: 'after-props', nonEmpty: 'after-props' }
         ],
         'react/jsx-curly-brace-presence': [
-            1,
-            {
-                props: 'always'
-            }
+            1, { props: 'always' }
         ],
         'react/jsx-props-no-spreading': 'off',
         'react/jsx-indent': 0,
