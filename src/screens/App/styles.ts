@@ -13,7 +13,8 @@ const styles = StyleSheet.create({
         right: 0
     },
     body: {
-        backgroundColor: Colors.white
+        backgroundColor: Colors.white,
+        flex: 1
     },
     sectionContainer: {
         marginTop: 32,
