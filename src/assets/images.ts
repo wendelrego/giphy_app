@@ -3,5 +3,5 @@
 // (image is the clear and exact view of what you want to describe)
 
 export default {
-    // image: require('./images/image.png')
+    logo: require('./images/logo.png')
 }

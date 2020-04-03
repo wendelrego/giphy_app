@@ -9,7 +9,7 @@ export default StyleSheet.create({
     header: {
         flexDirection: 'row',
         alignItems: 'center',
-        backgroundColor: colors.blues.one,
+        backgroundColor: colors.blue.one,
         padding: 16
     },
     headerTitle: {

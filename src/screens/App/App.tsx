@@ -6,9 +6,8 @@ import React, { useEffect, useState } from 'react'
 import {
     SafeAreaView,
     Text,
-    Button,
-    ScrollView,
-    View
+    View,
+    Image
 } from 'react-native'
 import { Options, Navigation } from 'react-native-navigation'
 import { getManufacturer } from 'react-native-device-info'
@@ -17,9 +16,13 @@ import styles from './styles'
 import Preferences from '../../storage/preferences/Preferences'
 import stacks from '../../values/stacks'
 import screens from '..'
+import images from '../../assets/images'
+import colors from '../../values/colors'
+import Button from '../../components/Button'
 
 interface Props {
-    number?: number
+    componentId: string,
+    number?: number,
 }
 
 const App = (props: Props) => {
@@ -33,48 +36,55 @@ const App = (props: Props) => {
 
     // Preferences usage example
     Preferences().set('a', [1, 2, 4, 5, 6])
-    const numbers = Preferences().get<number[]>('a').filter(it => it < 5)
+    Preferences().get<number[]>('a').filter(it => it < 5)
 
     return (
         <SafeAreaView style={styles.safeAreaContainer}>
             <View style={styles.container}>
+                <Image
+                    style={styles.logo}
+                    source={images.logo} />
                 <Text style={styles.text}>
-                    {`Screen number #${number + 1}`}
+                    {`Screen number #${number}`}
                 </Text>
-                <ScrollView
-                    contentInsetAdjustmentBehavior={'automatic'}
-                    contentContainerStyle={styles.scrollContent}>
-                    <View style={{ marginBottom: 16 }}>
-                        <Button
-                            title={'Push a screen'}
-                            onPress={() => {
-                                Navigation.push(stacks.APP, {
-                                    component: {
-                                        name: screens.App.name,
-                                        // Pass props to screen
-                                        passProps: {
-                                            number: number + 1
+                <View style={styles.btnContainer}>
+                    <Button
+                        label={'Push a screen'}
+                        backgroundColor={colors.purple.one}
+                        color={colors.white}
+                        onPress={() => {
+                            Navigation.push(stacks.APP, {
+                                component: {
+                                    name: screens.App.name,
+                                    // Pass props to screen
+                                    passProps: {
+                                        number: number + 1
+                                    },
+                                    options: {
+                                        topBar: {
+                                            backButton: {
+                                                title: `App #${number}`
+                                            }
                                         }
                                     }
-                                })
-                            }} />
-                        <Button
-                            title={'Show a modal'}
-                            onPress={() => {
-                                Navigation.showModal({
-                                    component: {
-                                        name: screens.Modal.name
-                                    }
-                                })
-                            }} />
-                    </View>
-                    <Text style={styles.text}>
-                        {`Numbers is ${JSON.stringify(numbers)}`}
-                    </Text>
-                    <Text style={styles.text}>
-                        {`Your device manufacturer is ${manufacturer}.`}
-                    </Text>
-                </ScrollView>
+                                }
+                            })
+                        }} />
+                    <Button
+                        label={'Show a modal'}
+                        backgroundColor={colors.purple.one}
+                        color={colors.white}
+                        onPress={() => {
+                            Navigation.showModal({
+                                component: {
+                                    name: screens.Modal.name
+                                }
+                            })
+                        }} />
+                </View>
+                <Text style={styles.text}>
+                    {`Your device manufacturer is ${manufacturer}.`}
+                </Text>
             </View>
         </SafeAreaView>
     )
@@ -83,8 +93,17 @@ const App = (props: Props) => {
 const navOptions: Options = {
     topBar: {
         title: {
-            text: 'App'
-        }
+            text: 'App',
+            color: colors.white
+        },
+        background: {
+            color: colors.orange.one
+        },
+        backButton: {
+            color: colors.white
+        },
+        elevation: 0,
+        noBorder: true
     }
 }
 
