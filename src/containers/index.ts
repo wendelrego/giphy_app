@@ -1,4 +1,3 @@
-import SideMenu from './SideMenu'
 /**
  * Sometimes something that needs to be displayed on its own context is not a fully complete screen.
  * In such cases, when you want to display a modal/overlay for example, you should rely on containers :)
@@ -21,11 +20,7 @@ const containers: AppNavigationRegister = {
     // Modal: {
     //     name: 'containers.Modal',
     //     component: Modal
-    // },
-    SideMenu: {
-        name: 'container/SideMenu',
-        component: SideMenu
-    }
+    // }
 }
 
 export default containers
