@@ -7,7 +7,8 @@ import {
     SafeAreaView,
     Text,
     View,
-    Image
+    Image,
+    StatusBar
 } from 'react-native'
 import { Options, Navigation } from 'react-native-navigation'
 import { getManufacturer } from 'react-native-device-info'
@@ -40,6 +41,7 @@ const App = (props: Props) => {
 
     return (
         <SafeAreaView style={styles.safeAreaContainer}>
+            <StatusBar barStyle={'light-content'} />
             <View style={styles.container}>
                 <Image
                     style={styles.logo}

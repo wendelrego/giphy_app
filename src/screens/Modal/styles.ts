@@ -1,6 +1,9 @@
-import { StyleSheet } from 'react-native'
+import { StyleSheet, Dimensions } from 'react-native'
 import colors from '../../values/colors'
 import Helpers from '../../utils/Helpers'
+
+const { width: deviceWidth } = Dimensions.get('window')
+const LOGO_SIZE = deviceWidth * 0.44
 
 export default StyleSheet.create({
     container: {
@@ -9,7 +12,7 @@ export default StyleSheet.create({
     header: {
         flexDirection: 'row',
         alignItems: 'center',
-        backgroundColor: colors.blue.one,
+        backgroundColor: colors.purple.one,
         padding: 16
     },
     headerTitle: {
@@ -26,5 +29,9 @@ export default StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center'
+    },
+    logo: {
+        width: LOGO_SIZE,
+        height: LOGO_SIZE
     }
 })

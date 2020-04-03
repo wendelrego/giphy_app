@@ -1,8 +1,14 @@
 import React from 'react'
-import { View, Text, TouchableOpacity } from 'react-native'
+import {
+    View,
+    Text,
+    TouchableOpacity,
+    Image
+} from 'react-native'
 import { Navigation } from 'react-native-navigation'
 
 import styles from './styles'
+import images from '../../assets/images'
 
 interface Props {
     componentId: string
@@ -20,7 +26,9 @@ const Modal = (props: Props) => (
             </TouchableOpacity>
         </View>
         <View style={styles.content}>
-            <Text>Modal content!</Text>
+            <Image
+                style={styles.logo}
+                source={images.logo} />
         </View>
     </View>
 )
