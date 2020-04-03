@@ -1,3 +1,4 @@
+import Modal from './Modal'
 /**
  * Exports a screen for registration with react-native-navigation
  * Be aware that the name of the screen must be unique or you will run into some problems (:
@@ -23,6 +24,10 @@ const screens: AppNavigationRegister = {
     App: {
         name: 'screens.App',
         component: App
+    },
+    Modal: {
+        name: 'screen/Modal',
+        component: Modal
     }
 }
 

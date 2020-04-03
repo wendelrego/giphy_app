@@ -5,22 +5,26 @@
 import React, { useEffect, useState } from 'react'
 import {
     SafeAreaView,
-    ScrollView,
-    View,
     Text,
-    StatusBar
+    Button,
+    ScrollView,
+    View
 } from 'react-native'
-
-import {
-    Header
-} from 'react-native/Libraries/NewAppScreen'
-
+import { Options, Navigation } from 'react-native-navigation'
 import { getManufacturer } from 'react-native-device-info'
 
-import Preferences from '../../storage/preferences/Preferences'
 import styles from './styles'
+import Preferences from '../../storage/preferences/Preferences'
+import stacks from '../../values/stacks'
+import screens from '..'
 
-const App = () => {
+interface Props {
+    number?: number
+}
+
+const App = (props: Props) => {
+    const { number = 0 } = props
+
     // react hooks example
     const [manufacturer, setManufacturer] = useState('')
     useEffect(() => {
@@ -29,35 +33,61 @@ const App = () => {
 
     // Preferences usage example
     Preferences().set('a', [1, 2, 4, 5, 6])
-    Preferences().get<number[]>('a').filter(it => it < 5)
+    const numbers = Preferences().get<number[]>('a').filter(it => it < 5)
 
     return (
-        <>
-            <StatusBar barStyle={'dark-content'} />
-            <SafeAreaView>
+        <SafeAreaView style={styles.safeAreaContainer}>
+            <View style={styles.container}>
+                <Text style={styles.text}>
+                    {`Screen number #${number + 1}`}
+                </Text>
                 <ScrollView
                     contentInsetAdjustmentBehavior={'automatic'}
-                    style={styles.scrollView}>
-                    <Header />
-                    <View style={styles.body}>
-                        <View style={styles.sectionContainer}>
-                            <Text style={styles.sectionPresentation}>A2S React Native Template</Text>
-                            <Text style={styles.sectionDescription}>
-                                This is a fully functional app with a lot of things pre-configured.
-                                {'\n\n'}
-                                You can start by editing this screen at
-                                {'\n'}
-                                <Text style={styles.highlight}>src/screens/App/App.tsx</Text>
-                                {'\n\n'}
-                                Make changes to the file and then come back to see your edits.
-                            </Text>
-                            <Text style={styles.sectionDescription}>{`Your device manufacturer is ${manufacturer}.`}</Text>
-                        </View>
+                    contentContainerStyle={styles.scrollContent}>
+                    <View style={{ marginBottom: 16 }}>
+                        <Button
+                            title={'Push a screen'}
+                            onPress={() => {
+                                Navigation.push(stacks.APP, {
+                                    component: {
+                                        name: screens.App.name,
+                                        // Pass props to screen
+                                        passProps: {
+                                            number: number + 1
+                                        }
+                                    }
+                                })
+                            }} />
+                        <Button
+                            title={'Show a modal'}
+                            onPress={() => {
+                                Navigation.showModal({
+                                    component: {
+                                        name: screens.Modal.name
+                                    }
+                                })
+                            }} />
                     </View>
+                    <Text style={styles.text}>
+                        {`Numbers is ${JSON.stringify(numbers)}`}
+                    </Text>
+                    <Text style={styles.text}>
+                        {`Your device manufacturer is ${manufacturer}.`}
+                    </Text>
                 </ScrollView>
-            </SafeAreaView>
-        </>
+            </View>
+        </SafeAreaView>
     )
 }
+
+const navOptions: Options = {
+    topBar: {
+        title: {
+            text: 'App'
+        }
+    }
+}
+
+App.options = navOptions
 
 export default App
