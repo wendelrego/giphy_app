@@ -19,6 +19,7 @@
         "react-native-i18n": "^2.0.15",
         "react-native-navigation": "^6.4.0",
         "react-native-status-bar-height": "^2.5.0",
+        "realm": "^5.0.4",
         "sync-storage": "^0.4.2"
     },
     "devDependencies": {
@@ -53,5 +54,8 @@
             "json",
             "node"
         ]
+    },
+    "engines": {
+        "node": "10"
     }
 }

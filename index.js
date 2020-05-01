@@ -7,10 +7,12 @@ import registerComponents from './src/navigation/registerComponents'
 import { initPreferences } from './src/storage/preferences/Preferences'
 import screens from './src/screens'
 import stacks from './src/values/stacks'
+import RealmManager from './src/storage/database'
 
 Navigation.events().registerAppLaunchedListener(async () => {
     registerComponents()
     await initPreferences()
+    await RealmManager.init()
 
     await Navigation.setRoot({
         root: {
