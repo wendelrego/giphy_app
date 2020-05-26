@@ -4,10 +4,10 @@
  */
 import Axios, { AxiosInstance } from 'axios'
 
-class PrivateAPI {
-    private static token?: string
+class GiphyAPI {
+    private static apiKey?: string
 
-    protected baseUrl: string = 'https://app.base_url.io/api/'
+    protected baseUrl: string = 'https://api.giphy.com/v1/'
     private axios: AxiosInstance
     private basePath: string
 
@@ -20,19 +20,26 @@ class PrivateAPI {
         })
 
         this.axios.interceptors.request.use((request) => {
-            if (PrivateAPI.token) {
-                request.headers.Authorization = `Bearer ${PrivateAPI.token}`
+            if (GiphyAPI.apiKey) {
+                request.params.api_key = GiphyAPI.apiKey
             }
             return request
         })
     }
 
-    protected get = <T = any>(path: string, data?: any) => this.axios.get<T>(this.basePath.concat(path), { params: data })
-    protected post = <T = any>(path: string, data: any) => this.axios.post<T>(this.basePath.concat(path), data)
+    protected get = <T = any>(
+        path: string,
+        data?: any
+    ) => this.axios.get<T>(this.basePath.concat(path), { params: data })
 
-    static setToken = (token: string | undefined) => {
-        PrivateAPI.token = token
+    protected post = <T = any>(
+        path: string,
+        data: any
+    ) => this.axios.post<T>(this.basePath.concat(path), data)
+
+    static setApiKey = (apiKey?: string) => {
+        GiphyAPI.apiKey = apiKey
     }
 }
 
-export default PrivateAPI
+export default GiphyAPI
