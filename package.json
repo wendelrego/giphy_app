@@ -22,6 +22,7 @@
         "sync-storage": "^0.4.2"
     },
     "devDependencies": {
+        "@types/giphy-api": "^2.0.2",
         "@babel/core": "^7.6.2",
         "@babel/runtime": "^7.6.2",
         "@react-native-community/eslint-config": "^1.0.0",

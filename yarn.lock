@@ -916,6 +916,11 @@
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@types/eslint-visitor-keys/-/eslint-visitor-keys-1.0.0.tgz#1ee30d79544ca84d68d4b3cdb0af4f205663dd2d"
 
+"@types/giphy-api@^2.0.2":
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@types/giphy-api/-/giphy-api-2.0.2.tgz#a9ca00cce8c31ab511dd848af2244daaf7ca79f8"
+  integrity sha512-tcYC4IcFs3FG9sGhGirQLl0ahyexxFJcgN0OKtkRXjwDoLgk7Si202aupgxFlC5pPUjJVFYD0e9Hv40psI6nnQ==
+
 "@types/i18n-js@*":
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/@types/i18n-js/-/i18n-js-3.0.1.tgz#e027d35513b2703e5d48b82771e7fcb3b664e2fb"
