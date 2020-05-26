@@ -20,7 +20,6 @@ import screens from '..'
 import images from '../../assets/images'
 import colors from '../../values/colors'
 import Button from '../../components/Button'
-import RealmManager from '../../storage/database'
 import User from '../../storage/database/model/User'
 
 interface Props {
@@ -41,26 +40,6 @@ const App = (props: Props) => {
     // Preferences usage example
     Preferences().set('a', [1, 2, 4, 5, 6])
     Preferences().get<number[]>('a').filter(it => it < 5)
-
-    // Realm usage example
-    useEffect(() => {
-        const realm = RealmManager.database
-        realm.objects<User>(User.schema.name).addListener((snapshot) => {
-            setUsers(snapshot)
-        })
-    }, [])
-
-    // Every time this screen is mounted, create someone on the database :))
-    useEffect(() => {
-        const realm = RealmManager.database
-        realm.write(() => {
-            realm.create<User>(User.schema.name, {
-                id: Math.random() * 2000,
-                email: 'random@random.com',
-                name: 'A random person'
-            }, Realm.UpdateMode.Modified)
-        })
-    }, [])
 
     useEffect(() => {
         console.log('users dataset changed to:', users)
