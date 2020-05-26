@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "a2stemplate.app"
-               BlueprintName = "a2stemplate"
-               ReferencedContainer = "container:a2stemplate.xcodeproj">
+               BuildableName = "giphy.app"
+               BlueprintName = "giphy"
+               ReferencedContainer = "container:giphy.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "a2stemplateTests.xctest"
-               BlueprintName = "a2stemplateTests"
-               ReferencedContainer = "container:a2stemplate.xcodeproj">
+               BuildableName = "giphyTests.xctest"
+               BlueprintName = "giphyTests"
+               ReferencedContainer = "container:giphy.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "a2stemplate.app"
-            BlueprintName = "a2stemplate"
-            ReferencedContainer = "container:a2stemplate.xcodeproj">
+            BuildableName = "giphy.app"
+            BlueprintName = "giphy"
+            ReferencedContainer = "container:giphy.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "a2stemplate.app"
-            BlueprintName = "a2stemplate"
-            ReferencedContainer = "container:a2stemplate.xcodeproj">
+            BuildableName = "giphy.app"
+            BlueprintName = "giphy"
+            ReferencedContainer = "container:giphy.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

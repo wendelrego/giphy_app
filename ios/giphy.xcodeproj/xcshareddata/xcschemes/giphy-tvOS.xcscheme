@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-               BuildableName = "a2stemplate-tvOS.app"
-               BlueprintName = "a2stemplate-tvOS"
-               ReferencedContainer = "container:a2stemplate.xcodeproj">
+               BuildableName = "giphy-tvOS.app"
+               BlueprintName = "giphy-tvOS"
+               ReferencedContainer = "container:giphy.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E48F1E0B4A5D006451C7"
-               BuildableName = "a2stemplate-tvOSTests.xctest"
-               BlueprintName = "a2stemplate-tvOSTests"
-               ReferencedContainer = "container:a2stemplate.xcodeproj">
+               BuildableName = "giphy-tvOSTests.xctest"
+               BlueprintName = "giphy-tvOSTests"
+               ReferencedContainer = "container:giphy.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "a2stemplate-tvOS.app"
-            BlueprintName = "a2stemplate-tvOS"
-            ReferencedContainer = "container:a2stemplate.xcodeproj">
+            BuildableName = "giphy-tvOS.app"
+            BlueprintName = "giphy-tvOS"
+            ReferencedContainer = "container:giphy.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "a2stemplate-tvOS.app"
-            BlueprintName = "a2stemplate-tvOS"
-            ReferencedContainer = "container:a2stemplate.xcodeproj">
+            BuildableName = "giphy-tvOS.app"
+            BlueprintName = "giphy-tvOS"
+            ReferencedContainer = "container:giphy.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

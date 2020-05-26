@@ -21,8 +21,8 @@ def flipper_post_install(installer)
   end
 end
 
-target 'a2stemplate' do
-  # Pods for a2stemplate
+target 'giphy' do
+  # Pods for giphy
   pod 'FBLazyVector', :path => "../node_modules/react-native/Libraries/FBLazyVector"
   pod 'FBReactNativeSpec', :path => "../node_modules/react-native/Libraries/FBReactNativeSpec"
   pod 'RCTRequired', :path => "../node_modules/react-native/Libraries/RCTRequired"
@@ -54,7 +54,7 @@ target 'a2stemplate' do
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
-  target 'a2stemplateTests' do
+  target 'giphyTests' do
     inherit! :complete
     # Pods for testing
   end
@@ -71,10 +71,10 @@ target 'a2stemplate' do
   end
 end
 
-target 'a2stemplate-tvOS' do
-  # Pods for a2stemplate-tvOS
+target 'giphy-tvOS' do
+  # Pods for giphy-tvOS
 
-  target 'a2stemplate-tvOSTests' do
+  target 'giphy-tvOSTests' do
     inherit! :search_paths
     # Pods for testing
   end
