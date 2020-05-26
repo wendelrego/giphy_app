@@ -1,4 +1,4 @@
-package com.a2stemplate;
+package com.br.lednew.giphy;
 
 import com.reactnativenavigation.NavigationActivity;
 

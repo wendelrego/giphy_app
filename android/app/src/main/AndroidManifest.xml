@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.a2stemplate">
+    package="com.br.lednew.giphy">
 
     <uses-permission android:name="android.permission.INTERNET" />
 

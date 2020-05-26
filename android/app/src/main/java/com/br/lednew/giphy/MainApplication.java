@@ -1,4 +1,4 @@
-package com.a2stemplate;
+package com.br.lednew.giphy;
 
 import android.content.Context;
 import com.facebook.react.PackageList;
@@ -52,7 +52,7 @@ public class MainApplication extends NavigationApplication implements ReactAppli
     private static void initializeFlipper(Context context, ReactInstanceManager reactInstanceManager) {
         if (BuildConfig.DEBUG) {
             try {
-                Class<?> aClass = Class.forName("com.a2stemplate.ReactNativeFlipper");
+                Class<?> aClass = Class.forName("com.br.lednew.giphy.ReactNativeFlipper");
                 aClass.getMethod("initializeFlipper", Context.class, ReactInstanceManager.class)
                     .invoke(null, context, reactInstanceManager);
             } catch (ClassNotFoundException | NoSuchMethodException | IllegalAccessException | InvocationTargetException e) {
