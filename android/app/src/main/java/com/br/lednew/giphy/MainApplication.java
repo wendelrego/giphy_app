@@ -12,6 +12,8 @@ import com.reactnativenavigation.react.NavigationReactNativeHost;
 import java.lang.reflect.InvocationTargetException;
 import java.util.List;
 
+import com.nozbe.watermelondb.WatermelonDBPackage;
+
 public class MainApplication extends NavigationApplication implements ReactApplication {
     private final ReactNativeHost mReactNativeHost = new NavigationReactNativeHost(this) {
         @Override
@@ -24,7 +26,7 @@ public class MainApplication extends NavigationApplication implements ReactAppli
             @SuppressWarnings("UnnecessaryLocalVariable")
             List<ReactPackage> packages = new PackageList(this).getPackages();
             // Packages that cannot be autolinked yet can be added manually here, for example:
-            // packages.add(new MyReactNativePackage());
+            packages.add(new WatermelonDBPackage());
             return packages;
         }
 
