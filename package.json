@@ -10,7 +10,7 @@
         "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
     },
     "dependencies": {
-        "@nozbe/watermelondb": "0.16.0",
+        "@nozbe/watermelondb": "0.16.2",
         "@nozbe/with-observables": "^1.0.5",
         "@react-native-community/async-storage": "^1.8.1",
         "axios": "^0.19.2",
