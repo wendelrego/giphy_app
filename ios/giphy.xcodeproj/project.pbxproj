@@ -20,7 +20,6 @@
 		2DCD954D1E0B4F2C00145EB5 /* giphyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* giphyTests.m */; };
 		9D40C8BA802F3DD9285CB72C /* libPods-giphy-giphyTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7679EDD95F8CCF05B4FAADB9 /* libPods-giphy-giphyTests.a */; };
 		A6760814F02B3D1C7119D6C9 /* libPods-giphy-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D25F516BDB3C51EE8DD29630 /* libPods-giphy-tvOS.a */; };
-		B0ADE5584DA1440290AE45F6 /* libWatermelonDB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9074364EA9BE4652A5BA7C14 /* libWatermelonDB.a */; };
 		B43DB57D2328E42F05B873BE /* libPods-giphy-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C74E173567723DACE42A12E /* libPods-giphy-tvOSTests.a */; };
 /* End PBXBuildFile section */
 
@@ -32,9 +31,9 @@
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
 			remoteInfo = giphy;
 		};
-		02F455BB2485BD3E003E7DBE /* PBXContainerItemProxy */ = {
+		020E89F0248C484E00CDB5EE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 13532F7261DF4132B7BF2B1C /* WatermelonDB.xcodeproj */;
+			containerPortal = 43F2E2D4B7AB4080BA02E7C1 /* WatermelonDB.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 6E660D5E213BCCD300189354;
 			remoteInfo = WatermelonDB;
@@ -55,7 +54,6 @@
 		00E356F21AD99517003FC87E /* giphyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = giphyTests.m; sourceTree = "<group>"; };
 		02F455AF2485BCBE003E7DBE /* giphy-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "giphy-Bridging-Header.h"; sourceTree = "<group>"; };
 		02F455B02485BCBE003E7DBE /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
-		13532F7261DF4132B7BF2B1C /* WatermelonDB.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = WatermelonDB.xcodeproj; path = "../node_modules/@nozbe/watermelondb/native/ios/WatermelonDB.xcodeproj"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* giphy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = giphy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = giphy/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = giphy/AppDelegate.m; sourceTree = "<group>"; };
@@ -70,6 +68,7 @@
 		3C7A676C72422EA9E14BD1E8 /* libPods-giphy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-giphy.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		40C7E7616B94203D11D5478C /* Pods-giphy-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-giphy-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-giphy-tvOS/Pods-giphy-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		4107887637ABF33B8C969D08 /* Pods-giphy-giphyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-giphy-giphyTests.release.xcconfig"; path = "Target Support Files/Pods-giphy-giphyTests/Pods-giphy-giphyTests.release.xcconfig"; sourceTree = "<group>"; };
+		43F2E2D4B7AB4080BA02E7C1 /* WatermelonDB.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = WatermelonDB.xcodeproj; path = "../node_modules/@nozbe/watermelondb/native/ios/WatermelonDB.xcodeproj"; sourceTree = "<group>"; };
 		4D67EB85B8981ED4C64498A2 /* Pods-giphy-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-giphy-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-giphy-tvOSTests/Pods-giphy-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		63C9FE6CCC31265DC5E26F23 /* Pods-giphy-giphyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-giphy-giphyTests.debug.xcconfig"; path = "Target Support Files/Pods-giphy-giphyTests/Pods-giphy-giphyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7679EDD95F8CCF05B4FAADB9 /* libPods-giphy-giphyTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-giphy-giphyTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -96,7 +95,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				27826BF947E7135480DF03F1 /* libPods-giphy.a in Frameworks */,
-				B0ADE5584DA1440290AE45F6 /* libWatermelonDB.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,20 +134,20 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		020E89ED248C484E00CDB5EE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				020E89F1248C484E00CDB5EE /* libWatermelonDB.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		02F455B22485BCD0003E7DBE /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
 				9074364EA9BE4652A5BA7C14 /* libWatermelonDB.a */,
 			);
 			name = "Recovered References";
-			sourceTree = "<group>";
-		};
-		02F455B82485BD3E003E7DBE /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				02F455BC2485BD3E003E7DBE /* libWatermelonDB.a */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		13B07FAE1A68108700A75B9A /* giphy */ = {
@@ -182,7 +180,7 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				13532F7261DF4132B7BF2B1C /* WatermelonDB.xcodeproj */,
+				43F2E2D4B7AB4080BA02E7C1 /* WatermelonDB.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -351,8 +349,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 02F455B82485BD3E003E7DBE /* Products */;
-					ProjectRef = 13532F7261DF4132B7BF2B1C /* WatermelonDB.xcodeproj */;
+					ProductGroup = 020E89ED248C484E00CDB5EE /* Products */;
+					ProjectRef = 43F2E2D4B7AB4080BA02E7C1 /* WatermelonDB.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -366,11 +364,11 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		02F455BC2485BD3E003E7DBE /* libWatermelonDB.a */ = {
+		020E89F1248C484E00CDB5EE /* libWatermelonDB.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libWatermelonDB.a;
-			remoteRef = 02F455BB2485BD3E003E7DBE /* PBXContainerItemProxy */;
+			remoteRef = 020E89F0248C484E00CDB5EE /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -644,6 +642,7 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/@nozbe/watermelondb/native/ios/WatermelonDB/**",
 					"$(SRCROOT)/../node_modules/@nozbe/watermelondb/native/ios/WatermelonDB/SupportingFiles/**",
+					"$(SRCROOT)/../node_modules/@nozbe/watermelondb/native/ios/WatermelonDB/SupportingFiles/**",
 				);
 				INFOPLIST_FILE = giphyTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -673,6 +672,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/@nozbe/watermelondb/native/ios/WatermelonDB/**",
+					"$(SRCROOT)/../node_modules/@nozbe/watermelondb/native/ios/WatermelonDB/SupportingFiles/**",
 					"$(SRCROOT)/../node_modules/@nozbe/watermelondb/native/ios/WatermelonDB/SupportingFiles/**",
 				);
 				INFOPLIST_FILE = giphyTests/Info.plist;
@@ -709,6 +709,7 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/@nozbe/watermelondb/native/ios/WatermelonDB/**",
 					"$(SRCROOT)/../node_modules/@nozbe/watermelondb/native/ios/WatermelonDB/SupportingFiles/**",
+					"$(SRCROOT)/../node_modules/@nozbe/watermelondb/native/ios/WatermelonDB/SupportingFiles/**",
 				);
 				INFOPLIST_FILE = giphy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -736,6 +737,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/@nozbe/watermelondb/native/ios/WatermelonDB/**",
+					"$(SRCROOT)/../node_modules/@nozbe/watermelondb/native/ios/WatermelonDB/SupportingFiles/**",
 					"$(SRCROOT)/../node_modules/@nozbe/watermelondb/native/ios/WatermelonDB/SupportingFiles/**",
 				);
 				INFOPLIST_FILE = giphy/Info.plist;
@@ -769,6 +771,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/@nozbe/watermelondb/native/ios/WatermelonDB/**",
+					"$(SRCROOT)/../node_modules/@nozbe/watermelondb/native/ios/WatermelonDB/SupportingFiles/**",
 					"$(SRCROOT)/../node_modules/@nozbe/watermelondb/native/ios/WatermelonDB/SupportingFiles/**",
 				);
 				INFOPLIST_FILE = "giphy-tvOS/Info.plist";
@@ -807,6 +810,7 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/@nozbe/watermelondb/native/ios/WatermelonDB/**",
 					"$(SRCROOT)/../node_modules/@nozbe/watermelondb/native/ios/WatermelonDB/SupportingFiles/**",
+					"$(SRCROOT)/../node_modules/@nozbe/watermelondb/native/ios/WatermelonDB/SupportingFiles/**",
 				);
 				INFOPLIST_FILE = "giphy-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -843,6 +847,7 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/@nozbe/watermelondb/native/ios/WatermelonDB/**",
 					"$(SRCROOT)/../node_modules/@nozbe/watermelondb/native/ios/WatermelonDB/SupportingFiles/**",
+					"$(SRCROOT)/../node_modules/@nozbe/watermelondb/native/ios/WatermelonDB/SupportingFiles/**",
 				);
 				INFOPLIST_FILE = "giphy-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -878,6 +883,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/@nozbe/watermelondb/native/ios/WatermelonDB/**",
+					"$(SRCROOT)/../node_modules/@nozbe/watermelondb/native/ios/WatermelonDB/SupportingFiles/**",
 					"$(SRCROOT)/../node_modules/@nozbe/watermelondb/native/ios/WatermelonDB/SupportingFiles/**",
 				);
 				INFOPLIST_FILE = "giphy-tvOSTests/Info.plist";
