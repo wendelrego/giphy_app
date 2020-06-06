@@ -19,7 +19,6 @@
         "react-native-device-info": "^5.5.4",
         "react-native-fast-image": "^8.1.5",
         "react-native-i18n": "^2.0.15",
-        "react-native-navigation": "^6.4.0",
         "react-native-status-bar-height": "^2.5.0",
         "sync-storage": "^0.4.2"
     },

@@ -1,6 +1,5 @@
 import React from 'react'
-import { SafeAreaView } from 'react-native'
-import { Options } from 'react-native-navigation'
+import { SafeAreaView , Text } from 'react-native'
 
 import styles from './styles'
 import colors from '../../values/colors'
@@ -13,27 +12,8 @@ const App= ({
 
 }: Props) => (
     <SafeAreaView style={styles.safeAreaContainer}>
-
+        <Text>App!</Text>
     </SafeAreaView>
 )
-
-const navOptions: Options = {
-    topBar: {
-        title: {
-            text: 'App',
-            color: colors.white
-        },
-        background: {
-            color: colors.orange.one
-        },
-        backButton: {
-            color: colors.white
-        },
-        elevation: 0,
-        noBorder: true
-    }
-}
-
-App.options = navOptions
 
 export default App
